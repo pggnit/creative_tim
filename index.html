@@ -11,6 +11,8 @@
     <link href="assets/css/bootstrap.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <link href ="assets/css/font-awesome.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/png" href="assets/images/favicon.png"/>
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -25,9 +27,15 @@
          margin: 0px;
          padding: 0px;
          overflow-x: hidden;
+         /*padding-top: 50px;*/
        }
 
+        html
+        {
+            padding-top: 50px;
+        }
        body
+
       {
        font-family: 'Lato', sans-serif;
        }
@@ -41,7 +49,7 @@
       .navbar
       {
        margin-bottom: 0px;
-       background-color: transparent;
+       /*background-color: transparent;*/
        border: none;
        }
 
@@ -61,7 +69,7 @@
        {
          position: relative;
          height: 400px;
-         margin: 0px;
+         margin-top: 0px;
        }
 
        #home .container
@@ -74,7 +82,7 @@
        #home h1
        {
          color: white;
-         font-size: 100px;
+         font-size: 95px;
          font-family: 'Lato', sans-serif;
        }
 
@@ -127,10 +135,11 @@
           font-size: 45px;
         }
 
-
          .about-image
            {
              margin-bottom: 30px;
+             border-radius: 10%;
+             border: 1px solid #c5a47e;
            }
 
            #about img
@@ -196,11 +205,25 @@
             margin-bottom: 60px;
           }
 
-          #googlemap
+          #map {
+         height: 400px;
+         width: 100%;
+        }
+
+        @media (max-width:500px) {
+          #home h1
           {
-            height: 400px;
-            width: 100%;
+            font-size: 50px;
           }
+          #home h2
+          {
+            font-size: 25px;
+          }
+          .contact-description
+          {
+            margin-bottom: 20px;
+          }
+        }
 
        </style>
 
@@ -218,29 +241,29 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
          </button>
-           <a class="navbar-brand" href="#">Creative Tim</a>
+           <a class="navbar-brand" href="#home">Creative Tim</a>
      </div>
 
     <div class="collapse navbar-collapse" id="mynavigationbar">
            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">About</a></li>
-                <li><a href="#">What we do</a></li>
-                <li><a href="#">Team</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#what-we-do">What we do</a></li>
+                <li><a href="#team">Team</a></li>
+                <li><a href="#contact">Contact</a></li>
          </ul>
       </div>
     </div>
     </nav>
 
       <section id="home">
-        <img id="home-background-image" src ="assets/images/home-background.jpg">
+        <img id="home-background-image" src ="assets/images/home-background1.jpg">
          <div class="container">
            <div class="row">
              <h1 class="text-center section-heading">Creative Tim</h1>
              <hr class="heading-line"/>
              <h2 class="text-center">Awesome Bootstrap freebies and templates to build better websites</h2>
               <div class="scroll-icon text-center">
-                  <a href="#">
+                  <a href="#about">
                   <span class="glyphicon glyphicon-chevron-down"></span>
                   </a>
                  </div>
@@ -248,7 +271,7 @@
          </div>
       </section>
 
-      <section id="about ">
+      <section id="about">
         <div class="container">
           <div class="row">
             <div class="common-section-area">
@@ -263,25 +286,25 @@
 
                <div class="row">
                     <div class="col-md-4">
-                      <img src="http://presentation.creative-tim.com/assets/img/pic10.jpg" class="img-responsive about-image ">
-                      <img src="http://presentation.creative-tim.com/assets/img/pic6.jpg" class="img-responsive about-image">
+                      <img src="https://images.pexels.com/photos/7110/desk-office-workspace-coworking.jpg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image ">
+                      <img src="https://images.pexels.com/photos/7355/startup-photos.jpg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image">
                        </div>
 
                        <div class="col-md-4">
-                         <img src="http://presentation.creative-tim.com/assets/img/pic11.jpg" class="img-responsive about-image">
-                         <img src="http://presentation.creative-tim.com/assets/img/pic1.jpg" class="img-responsive about-image ">
-                         <img src="http://presentation.creative-tim.com/assets/img/pic9.jpg" class="img-responsive about-image">
+                         <img src="https://images.pexels.com/photos/380769/pexels-photo-380769.jpeg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image">
+                         <img src="https://images.pexels.com/photos/429248/pexels-photo-429248.jpeg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image ">
+                         <img src="https://images.pexels.com/photos/7097/people-coffee-tea-meeting.jpg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image">
                           </div>
 
                           <div class="col-md-4">
-                            <img src="http://presentation.creative-tim.com/assets/img/pic2.jpg" class="img-responsive about-image ">
-                            <img src="http://presentation.creative-tim.com/assets/img/pic4.jpg" class="img-responsive about-image">
+                            <img src="https://images.pexels.com/photos/450271/pexels-photo-450271.jpeg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image ">
+                            <img src="https://images.pexels.com/photos/7065/space-desk-office-hero-7065.jpg?h=350&auto=compress&cs=tinysrgb" class="img-responsive about-image">
                              </div>
                </div>
           </div>
       </section>
 
-      <section id="what we do">
+      <section id="what-we-do">
         <div class="container">
           <div class="row">
             <div class="common-section-area">
@@ -391,7 +414,7 @@
         </div>
       </section>
 
-      <section id="contact us">
+      <section id="contact">
         <div class="container">
           <div class="row">
             <div class="common-section-area">
@@ -404,35 +427,37 @@
                 <h2 class="text-center"> Where To Meet ?</h2>
                 <h4 class="text-center"> N-81, Barakhamba Road, Block N, Cannaught Place, Block N, Connaught Place, New Delhi, Delhi 110001</h4>
                 <br>
-                <h3 class="text-center">Say Hello!</h3>
-                <div class="text-center">
+                <h3 class="text-center">Let's get in Touch!</h3>
+                <div class="text-center contact-description">
                 <a href="#" class="btn btn-primary">Contact Us</a>
                      </div>
                   </div>
+
                   <div class="col-md-8">
-                    <div id="googlemap">
+                    <div id="map">
                     </div>
-                      </div>
+                  </div>
               </div>
+
         </div>
         </section>
 
-        <!-- <script>
-       function initMap() {
-         var uluru = {lat: -25.363, lng: 131.044};
-         var map = new google.maps.Map(document.getElementById('map'), {
-           zoom: 4,
-           center: uluru
-         });
-         var marker = new google.maps.Marker({
-           position: uluru,
-           map: map
-         });
-       }
-     </script>
-     <script async defer
-         src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=initMap">
-         </script> -->
+        <script>
+         function initMap() {
+           var uluru = {lat: 28.631139, lng: 77.222053};
+           var map = new google.maps.Map(document.getElementById('map'), {
+             zoom: 10,
+             center: uluru
+           });
+           var marker = new google.maps.Marker({
+             position: uluru,
+             map: map
+           });
+         }
+       </script>
+       <script async defer
+       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBA_0mI1aRYtERJaOD7f6ikv45q1UcUj7E&callback=initMap">
+       </script>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
